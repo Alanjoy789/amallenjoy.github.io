@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Allen Joy – Data Analyst, Data Engineer, DevOps & Cloud Enthusiast. Professional portfolio, tech blog, and author page." />
+  <meta name="keywords" content="Data Analyst, Data Engineer, DevOps, AWS, Cloud, Portfolio, Tech Blog, Author" />
+  <meta name="author" content="Allen Joy" />
+  <meta property="og:title" content="Allen Joy | Data Engineer & Cloud Enthusiast" />
+  <meta property="og:description" content="Portfolio, blog, and author page of Allen Joy – Data Analyst, Data Engineer, DevOps & Cloud Enthusiast." />
+  <meta property="og:type" content="website" />
+  <title>Allen Joy | Data Engineer · DevOps · Cloud</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ CURSOR ═══ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══ LOADER ═══ -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-inner">
+      <span class="loader-text">Allen</span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" data-nav="home">
+        <span class="logo-bracket">&lt;</span>Allen<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+        <li><a href="#portfolio" class="nav-link" data-page="portfolio">Portfolio</a></li>
+        <li><a href="#blog" class="nav-link" data-page="blog">Blog</a></li>
+        <li><a href="#author" class="nav-link" data-page="author">Author</a></li>
+        <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+        <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="#contact" class="btn-nav-cta">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       PAGE: HOME
+  ═══════════════════════════════════════════ -->
+  <section id="home" class="page active">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-bg">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-grid"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-tag"><span class="status-dot"></span> Work. Words. Wonder.</div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Allen Joy</span>
+        </h1>
+        <div class="hero-roles">
+          <span class="role-prefix">—</span>
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-bio">
+          I’m a data professional focused on building reliable data pipelines, scalable cloud infrastructure, and meaningful insights from complex datasets. My work lies at the intersection of data engineering, analytics, and cloud technologies. Alongside my technical pursuits, I write about technology, literature, and the curiosity that drives innovation and human understanding.
+        </p>
+        <div class="hero-cta">
+          <a href="#portfolio" class="btn-primary">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#blog" class="btn-ghost">Read the Blog</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num" data-target="5">0</span><span>+</span><small>Projects</small></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num" data-target="2">0</span><span>+</span><small>Years Exp.</small></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num" data-target="2">0</span><span></span><small>Books Written</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+  <div class="hero-photo-wrap">
+    <img src="ajaj.png" alt="Allen Joy" class="hero-photo" />
+  </div>
+</div>
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>scroll</span>
+      </div>
+    </div>
+
+    <!-- SKILLS STRIP -->
+    <div class="skills-strip">
+      <div class="strip-track">
+        <span>AWS</span><span>Python</span><span>Apache Spark</span><span>Kubernetes</span>
+        <span>Terraform</span><span>PostgreSQL</span><span>dbt</span><span>Airflow</span>
+        <span>Docker</span><span>CI/CD</span><span>Snowflake</span><span>Kafka</span>
+        <span>AWS</span><span>Python</span><span>Apache Spark</span><span>Kubernetes</span>
+        <span>Terraform</span><span>PostgreSQL</span><span>dbt</span><span>Airflow</span>
+        <span>Docker</span><span>CI/CD</span><span>Snowflake</span><span>Kafka</span>
+      </div>
+    </div>
+
+    <!-- EXPERTISE -->
+    <div class="section-block" id="expertise">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What I Do</span>
+          <h2>Core <span class="gradient-text">Expertise</span></h2>
+        </div>
+        <div class="expertise-grid">
+          <div class="expertise-card" data-delay="0">
+            <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Data Analytics</h3>
+            <p>Transforming raw data into actionable insights. Expert in statistical analysis, data visualization, and BI tools.</p>
+            <div class="card-tags"><span>Python</span><span>SQL</span><span>Tableau</span><span>Power BI</span></div>
+          </div>
+          <div class="expertise-card" data-delay="100">
+            <div class="card-icon"><i class="fas fa-database"></i></div>
+            <h3>Data Engineering</h3>
+            <p>Designing and building robust data pipelines, warehouses, and ETL/ELT systems at scale.</p>
+            <div class="card-tags"><span>Spark</span><span>Kafka</span><span>Airflow</span><span>dbt</span></div>
+          </div>
+          <div class="expertise-card" data-delay="200">
+            <div class="card-icon"><i class="fas fa-infinity"></i></div>
+            <h3>DevOps</h3>
+            <p>Bridging development and operations through automation, CI/CD pipelines, and infrastructure as code.</p>
+            <div class="card-tags"><span>Docker</span><span>K8s</span><span>Jenkins</span><span>GitHub Actions</span></div>
+          </div>
+          <div class="expertise-card" data-delay="300">
+            <div class="card-icon"><i class="fab fa-aws"></i></div>
+            <h3>Cloud (AWS)</h3>
+            <p>Architecting scalable, cost-efficient cloud solutions. Proficient in core AWS services and cloud-native patterns.</p>
+            <div class="card-tags"><span>EC2</span><span>S3</span><span>Lambda</span><span>Redshift</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURED PROJECTS -->
+    
+    
+
+    <!-- LATEST BLOGS HOME -->
+    
+
+    <!-- FEATURED BOOKS -->
+    <!-- FEATURED BOOKS -->
+    <div class="section-block bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Published Works</span>
+          <h2>Featured <span class="gradient-text">Books</span></h2>
+          <a href="#author" class="see-all">Author Page <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="books-detailed">
+
+          <div class="book-detail-card">
+            <img src="prism.jpg" alt="Through the Prism of Life" class="book-cover-lg" style="object-fit:cover; width:160px; height:220px; border-radius:12px; box-shadow: 6px 6px 0 rgba(0,0,0,0.3); flex-shrink:0;" />
+            <div class="book-detail-info">
+              <h3>Through the Prism of Life</h3>
+              <p class="book-subtitle">A Collection of Poems</p>
+              <p>"Through the Prism of Life" is a poetic anthology that explores the multifaceted nature of existence. From the highs of joy and love to the lows of pain and loss, each poem offers a unique perspective on the human experience.</p>
+              <div class="book-detail-meta">
+                <span><i class="fas fa-calendar"></i> 2023</span>
+                <span><i class="fas fa-book"></i> 142 pages</span>
+                <span class="book-genre">Poetry</span>
+              </div>
+              <div class="book-ctas">
+                <button onclick="window.open('https://www.amazon.com/Through-Prism-Life-Allen-Joy/dp/B0BY9PPHLT/', '_blank')" class="btn-primary sm">Buy on Amazon</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="book-detail-card">
+            <img src="BBOU.jpg" alt="Through the Prism of Life" class="book-cover-lg" style="object-fit:cover; width:160px; height:220px; border-radius:12px; box-shadow: 6px 6px 0 rgba(0,0,0,0.3); flex-shrink:0;" />
+            <div class="book-detail-info">
+              <h3>Bouquet</h3>
+              <p class="book-subtitle">A Collection of Poems</p>
+              <p>A bouquet of flowers, a gift so bright — a symbol of love, a heartfelt delight. A rainbow of colors, a fragrant surprise, a beauty to behold for our eager eyes. A timeless treasure — a symbol of love that knows no measure.</p>
+              <div class="book-detail-meta">
+                <span><i class="fas fa-calendar"></i> 2023</span>
+                <span><i class="fas fa-book"></i> 142 pages</span>
+                <span class="book-genre">Poetry</span>
+              </div>
+              <div class="book-ctas">
+                <button onclick="window.open('https://www.amazon.com/bouquet-Allen-Joy-ebook/dp/B0C4BC273N/', '_blank')" class="btn-primary sm">Buy on Amazon</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="section-block newsletter-block">
+      <div class="container">
+        <div class="newsletter-inner">
+          <div class="newsletter-text">
+            <span class="section-tag">Stay Updated</span>
+            <h2>Join the <span class="gradient-text">Newsletter</span></h2>
+            <p>Data engineering tips, cloud architecture deep-dives, book reviews, and more — delivered fortnightly.</p>
+          </div>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="your@email.com" required />
+            <button type="submit" class="btn-primary"><span>Subscribe</span><i class="fas fa-paper-plane"></i></button>
+          </form>
+          <p class="newsletter-note"><i class="fas fa-lock"></i> No spam, ever. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT TEASER -->
+    <div class="section-block">
+      <div class="container">
+        <div class="contact-teaser">
+          <h2>Let's Build Something <span class="gradient-text">Remarkable</span></h2>
+          <p>Open to consulting, full-time roles, collaborations, and speaking engagements.</p>
+          <a href="#contact" class="btn-primary lg">
+            <span>Get in Touch</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- /.home -->
+
+  <!-- ═══════════════════════════════════════════
+       PAGE: PORTFOLIO
+  ═══════════════════════════════════════════ -->
+  <section id="portfolio" class="page">
+    <div class="page-hero">
+      <div class="container">
+        <span class="section-tag">My Work</span>
+        <h1>Technical <span class="gradient-text">Portfolio</span></h1>
+        <p>A showcase of real-world projects spanning data engineering, cloud architecture, and DevOps automation.</p>
+      </div>
+    </div>
+
+    <!-- FILTER -->
+    <div class="portfolio-filter-bar">
+      <div class="container">
+        <div class="filter-tabs" id="portfolioFilter">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="cloud">Cloud</button>
+          <button class="filter-btn" data-filter="devops">DevOps</button>
+          <button class="filter-btn" data-filter="data">Data</button>
+        </div>
+        <div class="github-badge">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com" target="_blank">github.com/Alanjoy789</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="container">
+      <div class="projects-grid portfolio-grid" id="portfolioGrid">
+
+      </div>
+
+      <!-- GitHub Embed -->
+      <div class="github-embed-section">
+        <h3><i class="fab fa-github"></i> GitHub Activity</h3>
+        <div class="github-contrib-grid" id="githubContrib"></div>
+        <a href="https://github.com/Alanjoy789" target="_blank" class="btn-ghost mt-2">View Full Profile <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- /.portfolio -->
+
+  <!-- ═══════════════════════════════════════════
+       PAGE: BLOG
+  ═══════════════════════════════════════════ -->
+  <section id="blog" class="page">
+    <div class="page-hero">
+      <div class="container">
+        <span class="section-tag">Writing</span>
+        <h1>The <span class="gradient-text">Blog</span></h1>
+        <p>Thoughts on data engineering, cloud architecture, DevOps, books, productivity, and life between keyboards.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Search + Filter -->
+      <div class="blog-controls">
+        <div class="blog-search">
+          <i class="fas fa-search"></i>
+          <input type="text" id="blogSearch" placeholder="Search articles…" />
+        </div>
+        <div class="blog-cats" id="blogCats">
+          <button class="cat-btn active" data-cat="all">All</button>
+          <button class="cat-btn" data-cat="technology">Technology</button>
+          <button class="cat-btn" data-cat="personal">Personal</button>
+          <button class="cat-btn" data-cat="lifestyle">Lifestyle</button>
+          <button class="cat-btn" data-cat="book-review">Book Reviews</button>
+          <button class="cat-btn" data-cat="productivity">Productivity</button>
+          <button class="cat-btn" data-cat="other">Others</button>
+        </div>
+      </div>
+
+      <!-- FEATURED POST -->
+      
+
+      <!-- BLOG GRID -->
+      <div class="blog-grid" id="blogGrid">
+
+        
+
+        
+
+      </div>
+
+      <!-- LOAD MORE -->
+      <div class="load-more-wrap">
+        <button class="btn-ghost" id="loadMorePosts">Load More Articles <i class="fas fa-chevron-down"></i></button>
+      </div>
+
+      <!-- COMMENTS SECTION -->
+      <div class="comments-section">
+        <h3><i class="fas fa-comments"></i> Discussion</h3>
+        <div class="comment-form-wrap">
+          <div class="comment-avatar"><i class="fas fa-user"></i></div>
+          <form class="comment-form" id="commentForm">
+            <input type="text" placeholder="Your name" required />
+            <textarea placeholder="Share your thoughts…" rows="3" required></textarea>
+            <button type="submit" class="btn-primary sm">Post Comment</button>
+          </form>
+        </div>
+        <div class="comments-list" id="commentsList">
+          <div class="comment">
+            <div class="comment-avatar"><i class="fas fa-user"></i></div>
+            <div class="comment-body">
+              <div class="comment-meta"><strong>Sarah K.</strong><span>2 days ago</span></div>
+              <p>Great article! The section on data contracts was particularly eye-opening. Would love to see a follow-up on testing strategies.</p>
+              <button class="comment-reply">Reply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.blog -->
+
+  <!-- ═══════════════════════════════════════════
+       PAGE: AUTHOR
+  ═══════════════════════════════════════════ -->
+  <section id="author" class="page">
+    <div class="author-hero">
+      <div class="author-hero-bg"></div>
+      <div class="container">
+        <div class="author-intro">
+          <div class="author-avatar-wrap">
+            <div class="author-avatar">
+             <img src="alanauthor.jpeg" alt="Allen Joy" class="author-photo" />
+            </div>
+            <div class="author-badge"><i class="fas fa-pen-nib"></i> Author</div>
+          </div>
+          <div class="author-intro-text">
+            <span class="section-tag">The Author</span>
+            <h1>Allen <span class="gradient-text">Joy</span></h1>
+            <p class="author-tagline"><em>Engineer by day, writer by night — always a reader.</em></p>
+            <div class="author-social"></div>
+
+              </div>     
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- BIO -->
+      <div class="author-bio-block">
+        <div class="author-bio-text">
+          <h2>My Story in <span class="gradient-text">Literature</span></h2>
+          <p>Before I wrote code, I wrote stories. My journey into writing began long before I knew what a data pipeline was — a childhood spent in libraries, a degree that introduced me to the power of narrative, and a quiet, persistent belief that words matter as much as algorithms.</p>
+          <p>I started the <strong>Born to Read</strong> YouTube channel as a way to bring together my two worlds: the technical rigor of engineering and the contemplative depth of literature. What began as book reviews evolved into something larger — a community of curious minds who believe that reading makes you a better engineer, and engineering makes you a more precise writer.</p>
+          <p>My books sit at the intersection of technology and lived experience. I write for engineers who read novels, and for readers who are curious about the systems shaping the world.</p>
+        </div>
+        <div class="author-facts">
+          <div class="fact-card"><span class="fact-num">2</span><span>Books Published</span></div>
+          <div class="fact-card"><span class="fact-num">3K+</span><span>YouTube Subscribers</span></div>
+          <div class="fact-card"><span class="fact-num">200+</span><span>Books Read (tracked)</span></div>
+          <div class="fact-card"><span class="fact-num">12+</span><span>Writing Genres Explored</span></div>
+        </div>
+      </div>
+
+      <!-- BOOKS -->
+      <div class="section-header">
+        <span class="section-tag">Published</span>
+        <h2>My <span class="gradient-text">Books</span></h2>
+      </div>
+      <div class="books-detailed">
+        <div class="book-detail-card">
+    <img src="prism.jpg" alt="Through the Prism of Life" class="book-cover-lg" style="object-fit:cover; width:160px; height:220px; border-radius:12px; box-shadow: 6px 6px 0 rgba(0,0,0,0.3);" />
+    <div class="book-detail-info">
+      <h3>Through the Prism of Life</h3>
+      <p class="book-subtitle">A Collection of Poems</p>
+      <p>"Through the Prism of Life" is a poetic anthology that explores the multifaceted nature of existence. From the highs of joy and love to the lows of pain and loss, each poem offers a unique perspective on the human experience. The collection invites readers to view life through a prism, where each emotion refracts and reflects into a spectrum of colors and shades. With lyrical language and vivid imagery, it offers a journey of self-discovery and reflection, reminding us that every moment of life is a precious gift.</p>
+      <div class="book-detail-meta">
+        <span><i class="fas fa-calendar"></i> 2023</span>
+        <span><i class="fas fa-book"></i> 142 pages</span>
+        <span class="book-genre">Poetry</span>
+      </div>
+      <div class="book-ctas">
+        <button onclick="window.open('https://www.amazon.com/Through-Prism-Life-Allen-Joy/dp/B0BY9PPHLT/', '_blank')" class="btn-primary sm">Buy on Amazon</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="book-detail-card">
+    <img src="BBOU.jpg" alt="Bouquet" class="book-cover-lg" style="object-fit:cover; width:160px; height:220px; border-radius:12px; box-shadow: 6px 6px 0 rgba(0,0,0,0.3);" />
+    <div class="book-detail-info">
+      <h3>Bouquet</h3>
+      <p class="book-subtitle">A Collection of Poems</p>
+      <p>A bouquet of flowers, a gift so bright — a symbol of love, a heartfelt delight. A rainbow of colors, a fragrant surprise, a beauty to behold for our eager eyes. Each petal a work of art, a masterpiece that's close to heart. A bouquet of flowers is a timeless treasure — a symbol of love that knows no measure. A reminder that every gesture of kindness warms the soul, and love is what makes us whole.</p>
+      <div class="book-detail-meta">
+        <span><i class="fas fa-calendar"></i> 2023</span>
+        <span><i class="fas fa-book"></i> 142 pages</span>
+        <span class="book-genre">Poetry</span>
+      </div>
+      <div class="book-ctas">
+        <button onclick="window.open('https://www.amazon.com/bouquet-Allen-Joy-ebook/dp/B0C4BC273N/', '_blank')" class="btn-primary sm">Buy on Amazon</button>
+      </div>
+    </div>
+      </div>
+
+      <!-- YOUTUBE -->
+      <div class="youtube-section">
+  
+  <div class="yt-grid">
+  <div class="yt-card" style="cursor:pointer;" onclick="window.open('https://www.youtube.com/watch?v=FndZRbFaQew', '_blank')">
+    <div class="yt-thumb" style="padding:0; overflow:hidden;">
+      <img src="https://img.youtube.com/vi/FndZRbFaQew/mqdefault.jpg" alt="Unboxing Book Fire and Blood" style="width:100%; height:100%; object-fit:cover; display:block;" />
+      <div class="yt-play" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
+        <i class="fas fa-play"></i>
+      </div>
+    </div>
+    <p>Unboxing Book | Fire and Blood (Game of Thrones) | George R.R Martin</p>
+  </div>
+
+  <div class="yt-card" style="cursor:pointer;" onclick="window.open('https://www.youtube.com/watch?v=sfl2c8MZC_s', '_blank')">
+    <div class="yt-thumb" style="padding:0; overflow:hidden;">
+      <img src="https://img.youtube.com/vi/sfl2c8MZC_s/mqdefault.jpg" alt="The Hidden Hindu" style="width:100%; height:100%; object-fit:cover; display:block;" />
+      <div class="yt-play" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
+        <i class="fas fa-play"></i>
+      </div>
+    </div>
+    <p>The Hidden Hindu | Book 1 | Short Review by Author Akshat Gupta</p>
+  </div>
+
+  <div class="yt-card" style="cursor:pointer;" onclick="window.open('https://www.youtube.com/watch?v=fgw1sIc22hc', '_blank')">
+    <div class="yt-thumb" style="padding:0; overflow:hidden;">
+      <img src="https://img.youtube.com/vi/fgw1sIc22hc/mqdefault.jpg" alt="Why We Read Books" style="width:100%; height:100%; object-fit:cover; display:block;" />
+      <div class="yt-play" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
+        <i class="fas fa-play"></i>
+      </div>
+    </div>
+    <p>Why We Read Books | Importance of Reading | Benefits of Reading</p>
+  </div>
+
+  <div class="yt-card" style="cursor:pointer;" onclick="window.open('https://www.youtube.com/watch?v=RA8NOPcWvZw', '_blank')">
+    <div class="yt-thumb" style="padding:0; overflow:hidden;">
+      <img src="https://img.youtube.com/vi/RA8NOPcWvZw/mqdefault.jpg" alt="Unboxing The Witcher Bookset" style="width:100%; height:100%; object-fit:cover; display:block;" />
+      <div class="yt-play" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
+        <i class="fas fa-play"></i>
+      </div>
+    </div>
+    <p>Unboxing Bookset | The Witcher | English</p>
+  </div>
+</div>
+          <div><span class="section-tag">Video Content</span><h2><span class="gradient-text">Born to Read</span> on YouTube</h2></div>
+          <a href="https://youtube.com/@borntoread7146" target="_blank" class="btn-primary sm"><i class="fab fa-youtube"></i> Subscribe</a>
+        </div>
+      </div>
+
+      <!-- MEDIA APPEARANCES -->
+      <div class="media-section">
+        <div class="section-header"><span class="section-tag">Press</span><h2>Media <span class="gradient-text">Appearances</span></h2></div>
+        <div class="media-grid">
+          
+      </div>
+
+    </div>
+  </section>
+  <!-- /.author -->
+
+  <!-- ═══════════════════════════════════════════
+       PAGE: ABOUT
+  ═══════════════════════════════════════════ -->
+  <section id="about" class="page">
+    <div class="page-hero">
+      <div class="container">
+        <span class="section-tag">About Me</span>
+        <h1>The <span class="gradient-text">Person</span> Behind the Code</h1>
+        <p>Engineer, author, perpetual learner. Here's the longer version.</p>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- BACKGROUND -->
+      <div class="about-intro">
+        <div class="about-img">
+          <div class="about-avatar">
+            <img src="ABJOY.jpeg" alt="Allen Joy" style="width:100%; height:100%; object-fit:cover; object-position:center top; border-radius:20px;" />
+          </div>
+          <div class="about-quote">"The best way to understand a system is to build it — and then break it."</div>
+        </div>
+        <div class="about-text">
+          <h2>Professional <span class="gradient-text">Background</span></h2>
+          <p>I'm Allen Joy, a data engineer and cloud architect with 2+ years of experience building data infrastructure for companies ranging from fast-growing startups to large enterprises. My work lives at the intersection of data engineering, cloud architecture, and DevOps.</p>
+          <p>I specialize in designing systems that are reliable, observable, and maintainable — not just systems that work. I care deeply about data quality, engineering best practices, and the kind of documentation that actually helps people.</p>
+          <p>Outside of engineering, I'm an author and the host of the <strong>Born to Read</strong> YouTube channel, where I explore the relationship between reading, thinking, and building.</p>
+        </div>
+      </div>
+
+      <!-- EXPERIENCE TIMELINE -->
+      <div class="timeline-section">
+        <h2>Career <span class="gradient-text">Journey</span></h2>
+        <div class="timeline">
+          <div class="timeline-item" data-delay="0">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2024 – 2025</span>
+              <h3>Graduate — Masters in Cloud Computing</h3>
+              <p class="timeline-company">TechCorp Global</p>
+              <p>Specialization in Cloud Management. Dissertation - Exploring Lightweight Monitoring Tools for  Microservices in Cloud-Based Architectures</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2022 – 2023</span>
+              <h3>System Analyst</h3>
+              <p class="timeline-company">DataStack Solutions</p>
+              <p>Delivered 24/7 client support and responsive customer service, addressing user and staff needs promptly and efficiently.
+                 Implemented system improvements that enhanced customer service response times, improving user satisfaction by 15%. 
+                 Optimized internal workflows, resulting in a 20% increase in operational efficiency.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-delay="200">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2019 – 2022</span>
+              <h3>Graduate — Bachelor in Computer Application</h3>
+              <p class="timeline-company">Insight Analytics</p>
+              <p>First Class Honours. Specialized in Mobile Application and Cloud Computing.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-delay="300">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2019</span>
+              <h3>Graduate — Diploma in Computer Application</h3>
+              <p class="timeline-company">University of Technology</p>
+              <p>First Class Honours. Foundational knowledge in computer programming, automation,
+database management, and essential software tools."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CERTIFICATIONS -->
+      <div class="certs-section">
+        <h2>Certifications & <span class="gradient-text">Credentials</span></h2>
+        <div class="certs-grid">
+          <div class="cert-card"><div class="cert-badge aws"><i class="fab fa-aws"></i></div><div><h4>AWS Solutions Architect</h4><p>Professional Level</p></div></div>
+          <div class="cert-card"><div class="cert-badge aws"><i class="fab fa-aws"></i></div><div><h4>AWS Data Analytics</h4><p>Specialty</p></div></div>
+          <div class="cert-card"><div class="cert-badge dbt"><span>dbt</span></div><div><h4>dbt Analytics Engineer</h4><p>Certification</p></div></div>
+          <div class="cert-card"><div class="cert-badge gcp"><i class="fab fa-google"></i></div><div><h4>Google Cloud Professional</h4><p>Data Engineer</p></div></div>
+        </div>
+      </div>
+
+      <!-- SKILLS BARS -->
+      <div class="skills-detailed">
+        <h2>Technical <span class="gradient-text">Skills</span></h2>
+        <div class="skills-bars-grid">
+          <div class="skill-bar-item" data-pct="95"><span>Python</span><div class="bar-track"><div class="bar-fill"></div></div><span class="pct">95%</span></div>
+          <div class="skill-bar-item" data-pct="90"><span>SQL</span><div class="bar-track"><div class="bar-fill"></div></div><span class="pct">90%</span></div>
+          <div class="skill-bar-item" data-pct="88"><span>AWS</span><div class="bar-track"><div class="bar-fill"></div></div><span class="pct">88%</span></div>
+          <div class="skill-bar-item" data-pct="85"><span>Apache Spark</span><div class="bar-track"><div class="bar-fill"></div></div><span class="pct">85%</span></div>
+          <div class="skill-bar-item" data-pct="88"><span>Terraform</span><div class="bar-track"><div class="bar-fill"></div></div><span class="pct">88%</span></div>
+          <div class="skill-bar-item" data-pct="82"><span>Kubernetes</span><div class="bar-track"><div class="bar-fill"></div></div><span class="pct">82%</span></div>
+          <div class="skill-bar-item" data-pct="90"><span>dbt</span><div class="bar-track"><div class="bar-fill"></div></div><span class="pct">90%</span></div>
+          <div class="skill-bar-item" data-pct="80"><span>Kafka</span><div class="bar-track"><div class="bar-fill"></div></div><span class="pct">80%</span></div>
+        </div>
+      </div>
+
+      <!-- CAREER GOALS -->
+      <div class="goals-section">
+        <h2>Career <span class="gradient-text">Goals</span></h2>
+        <div class="goals-grid">
+          <div class="goal-card"><i class="fas fa-rocket"></i><h4>Build at Scale</h4><p>Continue architecting data systems that process billions of events reliably and efficiently.</p></div>
+          <div class="goal-card"><i class="fas fa-users"></i><h4>Lead & Mentor</h4><p>Grow into a Principal/Staff engineer role where I can shape data strategy and mentor the next generation.</p></div>
+          <div class="goal-card"><i class="fas fa-pen"></i><h4>Write & Speak</h4><p>Publish more technical content, write my fourth book, and speak at major data and cloud conferences.</p></div>
+          <div class="goal-card"><i class="fas fa-lightbulb"></i><h4>Build Products</h4><p>Launch a SaaS tool that solves a real data engineering pain point — currently in stealth.</p></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- /.about -->
+
+  <!-- ═══════════════════════════════════════════
+       PAGE: CONTACT
+  ═══════════════════════════════════════════ -->
+  <section id="contact" class="page">
+    <div class="page-hero">
+      <div class="container">
+        <span class="section-tag">Get in Touch</span>
+        <h1>Let's <span class="gradient-text">Connect</span></h1>
+        <p>Open to new opportunities, collaborations, speaking invites, and good conversations.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- LEFT: INFO -->
+        <div class="contact-info">
+          <h3>Say Hello</h3>
+          <p>Whether you're a recruiter, a fellow engineer, a reader, or a conference organiser — I'd love to hear from you. I typically respond within 24 hours.</p>
+          <div class="contact-links">
+            <a href="mailto:alanjoy789@gmail.com" class="contact-link">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div><span>Email</span><strong>alanjoy789@gmail.com</strong></div>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="contact-link">
+              <div class="contact-icon linkedin"><i class="fab fa-linkedin"></i></div>
+              <div><span>LinkedIn</span><strong>/in/allenjoy</strong></div>
+            </a>
+            <a href="https://github.com" target="_blank" class="contact-link">
+              <div class="contact-icon github"><i class="fab fa-github"></i></div>
+              <div><span>GitHub</span><strong>github.com/allenjoy</strong></div>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="contact-link">
+              <div class="contact-icon insta"><i class="fab fa-instagram"></i></div>
+              <div><span>Instagram</span><strong>alanjoy789</strong></div>
+            </a>
+          </div>
+          <div class="availability-card">
+            <span class="status-dot"></span>
+            <div><strong>Available for hire</strong><p>Open to full-time, contract, and consulting roles in Data Engineering &amp; Cloud.</p></div>
+          </div>
+        </div>
+
+        <!-- RIGHT: FORM -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/mvzwnryz" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Full Name</label>
+              <input type="text" id="contactName" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" name="email" placeholder="jane@company.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <select id="contactSubject" name="subject">
+              <option value="">Select a topic…</option>
+              <option>Job Opportunity</option>
+              <option>Consulting Enquiry</option>
+              <option>Speaking Invite</option>
+              <option>Collaboration</option>
+              <option>Book / Writing</option>
+              <option>Just Saying Hi</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contactMsg">Message</label>
+            <textarea id="contactMsg" name="message" rows="5" placeholder="Tell me about your project, role, or idea…" required></textarea>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" id="newsletter2" name="newsletter" />
+            <label for="newsletter2">Also subscribe me to the newsletter</label>
+          </div>
+          <button type="submit" class="btn-primary full-width" id="contactSubmit">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            <span>Message sent! I'll be in touch within 24 hours.</span>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+  <!-- /.contact -->
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo"><span class="logo-bracket">&lt;</span>AJ<span class="logo-bracket">/&gt;</span></a>
+          <p>Data Engineer · DevOps · Cloud Architect · Author. Building systems that matter, one pipeline at a time.</p>
+          <div class="footer-social">
+            <button onclick="window.open('https://github.com/Alanjoy789', '_blank')" aria-label="GitHub" class="footer-social-btn"><i class="fab fa-github"></i></button>
+            <button onclick="window.open('https://linkedin.com/in/allen-joy789', '_blank')" aria-label="LinkedIn" class="footer-social-btn"><i class="fab fa-linkedin"></i></button>
+            <button onclick="window.open('https://youtube.com/@borntoread7146', '_blank')" aria-label="YouTube" class="footer-social-btn"><i class="fab fa-youtube"></i></button>
+            <button onclick="window.open('https://instagram.com/alanjoy789', '_blank')" aria-label="Instagram" class="footer-social-btn"><i class="fab fa-instagram"></i></button>
+</div>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#author">Author</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+  <ul>
+    <li><button onclick="window.open('https://www.amazon.com/Through-Prism-Life-Allen-Joy/dp/B0BY9PPHLT/', '_blank')" style="background:none; border:none; color:var(--text-muted); font-size:0.82rem; cursor:pointer; padding:0; font-family:inherit;">My Books</button></li>
+    <li><button onclick="window.open('https://youtube.com/@borntoread7146', '_blank')" style="background:none; border:none; color:var(--text-muted); font-size:0.82rem; cursor:pointer; padding:0; font-family:inherit;">YouTube Channel</button></li>
+    <li><button onclick="window.open('https://github.com/Alanjoy789', '_blank')" style="background:none; border:none; color:var(--text-muted); font-size:0.82rem; cursor:pointer; padding:0; font-family:inherit;">GitHub Profile</button></li>
+  </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Allen Joy. Crafted with curiosity &amp; caffeine.</p>
+        <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Notification toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
