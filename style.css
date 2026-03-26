@@ -483,6 +483,41 @@ ul { list-style: none; }
   justify-content: center;
   padding: 80px 40px 80px 0;
 }
+
+@media (max-width: 900px) {
+  .hero-visual {
+    display: flex !important;
+    grid-column: 1;
+    justify-content: center;
+    padding: 20px 24px;
+  }
+
+  .hero-photo-wrap {
+    width: 280px;
+    height: 320px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .hero-content {
+    padding: 80px 24px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-visual {
+    display: flex !important;
+  }
+
+  .hero-photo-wrap {
+    width: 220px;
+    height: 260px;
+  }
+}
+
 /* Terminal Card */
 .terminal-card {
   background: rgba(13,13,20,0.9);
