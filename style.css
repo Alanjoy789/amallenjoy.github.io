@@ -722,7 +722,7 @@ ul { list-style: none; }
   position: relative;
   overflow: hidden;
 }
-.large-thumb { height: 240px; }
+.large-thumb { height: 300px; }
 .project-bg {
   position: absolute; inset: 0;
   background: conic-gradient(from 180deg at 50% 50%,
