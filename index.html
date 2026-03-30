@@ -406,7 +406,128 @@
 
       <!-- BLOG GRID -->
       <div class="blog-grid" id="blogGrid">
+        <article class="blog-card" data-cat="technology" data-delay="0" style="grid-column: span 3;">
+    <div class="blog-img" style="height:220px;">
+      <img src="blog1.png" alt="Agentic AI in the Enterprise" style="width:100%; height:100%; object-fit:cover; display:block;" />
+      <span class="blog-cat">Technology</span>
+    </div>
+    <div class="blog-body">
+      <div class="blog-meta">
+        <span><i class="far fa-calendar"></i> 30 March 2026</span>
+        <span><i class="far fa-clock"></i> 5 min read</span>
+        <span><i class="fas fa-user"></i> Allen Joy</span>
+      </div>
+      <h3>Agentic AI in the Enterprise: What Tech Leaders Need to Know in 2026</h3>
+      <p>The shift has already happened. Gartner says 40% of enterprise applications will embed task-specific AI agents by end of 2026 — up from less than 5% just a year ago. That's not a gradual adoption curve. That's a step change.</p>
+      <div class="toc-preview">
+        <strong>Table of Contents:</strong>
+        <ol>
+          <li>What "agentic AI" actually means</li>
+          <li>Where it's delivering results right now</li>
+          <li>The three things blocking scale</li>
+          <li>Governance is your competitive advantage</li>
+          <li>A 5-step path from pilot to production</li>
+        </ol>
+      </div>
+      <div class="blog-tags">
+        <span>#AgenticAI</span>
+        <span>#Enterprise</span>
+        <span>#Technology</span>
+        <span>#AIStrategy</span>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-top:16px;">
+        <a href="#" class="btn-primary sm" onclick="document.getElementById('blogFullPost').style.display='block'; this.closest('.blog-card').scrollIntoView();">Read Full Article</a>
+        <div class="share-btns">
+          <span>Share:</span>
+          <button onclick="window.open('https://twitter.com/intent/tweet?text=Agentic AI in the Enterprise&url=https://amallenjoy.com', '_blank')" class="share-btn twitter"><i class="fab fa-x-twitter"></i></button>
+          <button onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=https://amallenjoy.com', '_blank')" class="share-btn linkedin"><i class="fab fa-linkedin"></i></button>
+        </div>
+      </div>
+    </div>
+  </article>
 
+</div>
+
+<!-- FULL BLOG POST -->
+<div id="blogFullPost" style="display:none; margin-top:40px; background:var(--bg-card); border:1px solid var(--border); border-radius:16px; padding:40px;">
+  <button onclick="document.getElementById('blogFullPost').style.display='none'" style="background:var(--bg-secondary); border:1px solid var(--border); color:var(--text-secondary); padding:8px 16px; border-radius:8px; margin-bottom:24px; cursor:pointer;">← Back to Blog</button>
+  <div style="max-width:760px; margin:0 auto;">
+    <span style="font-size:0.72rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--cyan); padding:5px 12px; border:1px solid rgba(6,182,212,0.3); border-radius:100px;">Technology</span>
+    <h1 style="font-family:var(--font-display); font-size:clamp(1.6rem,3vw,2.2rem); font-weight:800; margin:20px 0 12px; line-height:1.2;">Agentic AI in the Enterprise: What Tech Leaders Need to Know in 2026</h1>
+    <div style="display:flex; gap:20px; font-size:0.78rem; color:var(--text-muted); margin-bottom:32px; flex-wrap:wrap;">
+      <span><i class="fas fa-user"></i> Allen Joy</span>
+      <span><i class="far fa-calendar"></i> 30 March 2026</span>
+      <span><i class="far fa-clock"></i> 5 min read</span>
+    </div>
+    <img src="blog1.png" alt="Agentic AI" style="width:100%; border-radius:12px; margin-bottom:32px; object-fit:cover; height:300px;"/>
+
+    <div style="font-size:0.92rem; color:var(--text-secondary); line-height:1.9;">
+
+      <h2 style="font-family:var(--font-display); font-size:1.3rem; font-weight:700; color:var(--text-primary); margin:28px 0 12px;">The shift has already happened</h2>
+      <p>Stop treating agentic AI as a horizon technology. Gartner says 40% of enterprise applications will embed task-specific AI agents by end of 2026 — up from less than 5% just a year ago. That's not a gradual adoption curve. That's a step change.</p>
+      <p style="margin-top:12px;">Yet most enterprises are still stuck. Deloitte found that while 68% of organisations are exploring or piloting agentic AI, only 11% are running it in active production. The gap between enthusiasm and execution is where most technology leaders currently live. This post is about closing it.</p>
+
+      <h2 style="font-family:var(--font-display); font-size:1.3rem; font-weight:700; color:var(--text-primary); margin:28px 0 12px;">What "agentic AI" actually means</h2>
+      <p>A true AI agent doesn't just respond — it acts. It interprets a goal, plans the steps to achieve it, calls tools and APIs, executes actions, and adjusts when things change. Autonomously. Repeatedly. Until the job is done.</p>
+      <p style="margin-top:12px;">This is fundamentally different from a chatbot, a copilot, or a rules-based automation. Those tools operate within a single application. Agents operate across systems.</p>
+      <p style="margin-top:12px;">Watch out for agent washing. Vendors are aggressively rebranding existing automation as "agents." A useful test: can it handle novel, multi-step situations it wasn't explicitly programmed for? If not, it's not agentic — and deploying it as such leads to poor ROI and frustrated teams.</p>
+
+      <h2 style="font-family:var(--font-display); font-size:1.3rem; font-weight:700; color:var(--text-primary); margin:28px 0 12px;">Where it's delivering results right now</h2>
+      <p>The clearest signal is where production deployments are generating measurable outcomes:</p>
+      <ul style="margin-top:12px; padding-left:20px; display:flex; flex-direction:column; gap:8px;">
+        <li><strong style="color:var(--text-primary);">Customer support</strong> — An airline deployed agents to handle rebooking, refunds, and baggage rerouting autonomously. Teams report saving 40+ hours per month.</li>
+        <li><strong style="color:var(--text-primary);">Finance ops</strong> — Automated invoicing, forecasting, and expense auditing are cutting financial close times by 30–50%.</li>
+        <li><strong style="color:var(--text-primary);">Healthcare</strong> — One health system piloted an agentic clinical assistant with 50 providers. Adoption hit 80%. Documentation time dropped 42%, saving ~66 minutes per provider per day.</li>
+        <li><strong style="color:var(--text-primary);">Banking</strong> — Bradesco deployed agents for fraud prevention and customer concierge. The result: 17% of employee capacity freed up, lead times down 22%.</li>
+      </ul>
+
+      <h2 style="font-family:var(--font-display); font-size:1.3rem; font-weight:700; color:var(--text-primary); margin:28px 0 12px;">The three things blocking scale</h2>
+      <p>If your pilot isn't becoming production, one of these is why:</p>
+      <ul style="margin-top:12px; padding-left:20px; display:flex; flex-direction:column; gap:8px;">
+        <li><strong style="color:var(--text-primary);">Legacy integration</strong> — Most enterprise systems weren't built for agents. APIs are slow, fragile, and rate-limited. Before deploying agents, audit your data access layer.</li>
+        <li><strong style="color:var(--text-primary);">Governance gaps</strong> — Traditional IT governance wasn't designed for systems that make independent decisions. You need audit trails, scope limits, escalation protocols, and override mechanisms.</li>
+        <li><strong style="color:var(--text-primary);">Wrong process thinking</strong> — The biggest mistake is automating your existing process rather than redesigning it. The question to ask: if an agent could handle this goal end-to-end, how would we design the process from scratch?</li>
+      </ul>
+
+      <h2 style="font-family:var(--font-display); font-size:1.3rem; font-weight:700; color:var(--text-primary); margin:28px 0 12px;">Governance is your competitive advantage</h2>
+      <p>The organisations scaling fastest aren't treating governance as compliance overhead — they're treating it as the thing that lets them deploy agents in higher-stakes scenarios with confidence.</p>
+      <ul style="margin-top:12px; padding-left:20px; display:flex; flex-direction:column; gap:8px;">
+        <li><strong style="color:var(--text-primary);">Human-in-the-loop is a design choice</strong> — For high-stakes decisions, a human checkpoint at the final step is a feature, not a weakness.</li>
+        <li><strong style="color:var(--text-primary);">Governance agents are emerging</strong> — At scale, leading organisations are deploying specialist agents that monitor other agents for policy violations.</li>
+        <li><strong style="color:var(--text-primary);">Leadership ownership drives results</strong> — Enterprises where senior leaders actively shape AI governance achieve significantly greater business value.</li>
+      </ul>
+
+      <h2 style="font-family:var(--font-display); font-size:1.3rem; font-weight:700; color:var(--text-primary); margin:28px 0 12px;">A 5-step path from pilot to production</h2>
+      <ul style="margin-top:12px; padding-left:20px; display:flex; flex-direction:column; gap:8px;">
+        <li><strong style="color:var(--text-primary);">Audit</strong> — Is this task genuinely agentic, or just complex automation?</li>
+        <li><strong style="color:var(--text-primary);">Instrument</strong> — Build observability before you build autonomy.</li>
+        <li><strong style="color:var(--text-primary);">Scope</strong> — Start with proven categories: customer service, finance ops, knowledge management.</li>
+        <li><strong style="color:var(--text-primary);">Govern</strong> — Design human oversight checkpoints before deployment, not after.</li>
+        <li><strong style="color:var(--text-primary);">Cost-model</strong> — Token consumption and API costs compound fast at scale.</li>
+      </ul>
+
+      <h2 style="font-family:var(--font-display); font-size:1.3rem; font-weight:700; color:var(--text-primary); margin:28px 0 12px;">The bottom line</h2>
+      <p>The market is moving with or without you. Agentic AI could drive nearly 30% of enterprise application software revenue by 2035. The organisations capturing that value aren't waiting to see how things develop — they're building the operational muscle now.</p>
+      <p style="margin-top:12px;">The risk isn't moving too fast. The risk is running endless pilots, automating the wrong processes, and discovering three years from now that your competitors redesigned their workflows while you were still experimenting.</p>
+      <p style="margin-top:12px; font-style:italic; color:var(--text-primary);">Treat agents as workers. Design governance as an enabler. Reimagine the process, don't just automate it.</p>
+
+    </div>
+
+    <div style="margin-top:40px; padding-top:24px; border-top:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <span style="font-size:0.72rem; padding:4px 12px; border-radius:100px; background:rgba(124,58,237,0.1); color:var(--purple-light); border:1px solid rgba(124,58,237,0.2);">#AgenticAI</span>
+        <span style="font-size:0.72rem; padding:4px 12px; border-radius:100px; background:rgba(124,58,237,0.1); color:var(--purple-light); border:1px solid rgba(124,58,237,0.2);">#Enterprise</span>
+        <span style="font-size:0.72rem; padding:4px 12px; border-radius:100px; background:rgba(124,58,237,0.1); color:var(--purple-light); border:1px solid rgba(124,58,237,0.2);">#Technology</span>
+        <span style="font-size:0.72rem; padding:4px 12px; border-radius:100px; background:rgba(124,58,237,0.1); color:var(--purple-light); border:1px solid rgba(124,58,237,0.2);">#AIStrategy</span>
+      </div>
+      <div class="share-btns">
+        <span>Share:</span>
+        <button onclick="window.open('https://twitter.com/intent/tweet?text=Agentic AI in the Enterprise&url=https://amallenjoy.com', '_blank')" class="share-btn twitter"><i class="fab fa-x-twitter"></i></button>
+        <button onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=https://amallenjoy.com', '_blank')" class="share-btn linkedin"><i class="fab fa-linkedin"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
         
 
         
