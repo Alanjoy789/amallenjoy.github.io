@@ -400,6 +400,59 @@
   </div>
     </div>
 
+    <div class="project-card full-card" data-cat="data" data-delay="200">
+    <div class="project-thumb large-thumb" style="position:relative; overflow:hidden; height:300px; background:#0a0a1f;">
+      <img src="ETL.png" alt="ETL Pipeline" style="width:100%; height:300px; object-fit:contain; object-position:center; display:block; background:#0a0a1f;" />
+      <div class="project-overlay">
+        <a href="https://github.com/Alanjoy789/End-to-End-ETL-Pipeline-with-Automated-Reporting" target="_blank" class="project-link">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+        <a href="https://alanjoy789.github.io/End-to-End-ETL-Pipeline-with-Automated-Reporting/dashboards/weather_report.html" target="_blank" class="project-link">
+          <i class="fas fa-external-link-alt"></i> Live Demo
+        </a>
+      </div>
+    </div>
+    <div class="project-info">
+      <div class="project-header">
+        <span class="project-cat data-cat">Data Engineering</span>
+        <span class="project-year">2025</span>
+      </div>
+      <h3>End-to-End ETL Pipeline with Automated Reporting</h3>
+      <p>Automated weather intelligence pipeline that collects real-time data from 5 cities worldwide, processes it through validation and feature engineering stages, stores it in SQLite with duplicate prevention, and produces a self-contained interactive dashboard with Chart.js visualizations.</p>
+      <div class="case-study">
+        <div class="cs-block">
+          <strong>Problem:</strong> Organizations need reliable, automated systems to collect data from external sources, ensure its quality, store it efficiently, and present actionable insights — all without manual intervention. Manual data collection is error-prone, inconsistent, and doesn't scale.
+        </div>
+        <div class="cs-block">
+          <strong>Solution:</strong> Built a production-style ETL pipeline in Python that extracts real-time weather data from OpenWeatherMap API with retry logic, transforms it through validation and feature engineering (comfort index, temperature/humidity/wind categories), loads it into SQLite using idempotent upsert logic, and auto-generates an interactive HTML dashboard. The pipeline logs every run with metadata for auditability and is scheduler-ready.
+        </div>
+        <div class="cs-block">
+          <strong>Results:</strong> Processes 5 cities in under 2 seconds per run. Handles API failures gracefully with exponential backoff retries. Prevents duplicate records across multiple runs. Generates a self-contained dashboard with 4 interactive charts and pipeline run history. Includes 16 unit tests with full coverage across all pipeline stages.
+        </div>
+      </div>
+      <div class="project-stack">
+        <span>Python</span>
+        <span>pandas</span>
+        <span>SQLite</span>
+        <span>Chart.js</span>
+        <span>Jinja2</span>
+        <span>pytest</span>
+        <span>PyYAML</span>
+        <span>GitHub Pages</span>
+      </div>
+    </div>
+  </div>
+```
+
+---
+
+## Push to GitHub
+
+1. Open **GitHub Desktop**
+2. Type commit message:
+```
+Added ETL Pipeline project
+
       <!-- GitHub Embed -->
       <div class="github-embed-section">
         <h3><i class="fab fa-github"></i> GitHub Activity</h3>
