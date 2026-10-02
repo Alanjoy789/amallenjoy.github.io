@@ -1848,3 +1848,87 @@ ul { list-style: none; }
   border-color: var(--purple-mid);
   color: var(--purple-light);
 }
+
+/* ─── HOME CERTIFICATIONS ─── */
+.home-certs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.home-cert-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  transition: all 0.3s var(--ease);
+}
+.home-cert-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+.home-cert-badge {
+  width: 96px;
+  height: 96px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  border: 2px solid var(--badge-color);
+  background: radial-gradient(circle, rgba(255,255,255,0.06), transparent 70%);
+  box-shadow: 0 0 0 5px rgba(255,255,255,0.03), 0 0 24px var(--badge-glow);
+  color: var(--badge-color);
+}
+.home-cert-badge i { font-size: 1.6rem; }
+.home-cert-badge span {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+.home-cert-badge.pl300 { --badge-color: #f2c811; --badge-glow: rgba(242,200,17,0.25); }
+.home-cert-badge.dp600 { --badge-color: #22d3ee; --badge-glow: rgba(34,211,238,0.25); }
+.home-cert-level {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cyan-light);
+  margin-bottom: 6px;
+}
+.home-cert-info h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+.home-cert-info p {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+.home-cert-verify {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--purple-light);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s;
+}
+.home-cert-verify:hover { gap: 10px; }
+
+@media (max-width: 900px) {
+  .home-certs-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .home-cert-card { flex-direction: column; text-align: center; }
+}
